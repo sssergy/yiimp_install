@@ -64,6 +64,7 @@ displayErr() {
     output " "
     sleep 3
     
+    sudo service apache2 stop
     sudo aptitude -y install nginx
     sudo rm /etc/nginx/sites-enabled/default
     sudo systemctl start nginx.service
@@ -280,7 +281,7 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    git clone https://github.com/tpruvot/yiimp.git
+    git clone https://github.com/sssergy/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
