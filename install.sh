@@ -45,7 +45,7 @@ displayErr() {
     sleep 3
         
     sudo apt-get -y update 
-    sudo apt-get -y upgrade
+    #sudo apt-get -y upgrade
     sudo apt-get -y autoremove
     sudo apt-get -y install wget curl nano mc apt-transport-https htop
     
@@ -282,7 +282,7 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    git clone https://github.com/sssergy/yiimp.git
+    git clone https://github.com/tpruvot/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
