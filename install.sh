@@ -47,6 +47,7 @@ displayErr() {
     sudo apt-get -y update 
     sudo apt-get -y upgrade
     sudo apt-get -y autoremove
+    sudo apt-get -y install wget curl nano mc apt-transport-https htop
     
     
     # Switch Aptitude
